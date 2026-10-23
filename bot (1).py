@@ -12,18 +12,18 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKe
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # ========== НАСТРОЙКИ (меняешь только это) ==========
-BOT_TOKEN = os.getenv("BOT_TOKEN", "ВСТАВЬ_СЮДА_ТОКЕН_ОТ_BOTFATHER")
-ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))  # твой telegram id
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8908550813:AAED2wjaCbHCfabaIaJCsBRV1qzNBidp7GE")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "7342606169"))  # твой telegram id
 LINKNI_URL = "https://telegram.me/linknibot/app?startapp=x_1ou2x"
 
-REWARD_PER_CLAIM = 0.25       # сколько получает пользователь за 1 подписку
+REWARD_PER_CLAIM = 0.3       # сколько получает пользователь за 1 подписку
 CLAIM_COOLDOWN_MIN = 3        # минут между заявками
 DAILY_CLAIM_LIMIT = 15        # максимум заявок в сутки на пользователя
-WITHDRAW_MIN = 65.0           # минимум звёзд НА БАЛАНСЕ для вывода (50 к выплате + 30% комиссии = 65)
+WITHDRAW_MIN = 15.0           # минимум звёзд НА БАЛАНСЕ для вывода (50 к выплате + 30% комиссии = 65)
 WITHDRAWAL_COMMISSION = 0.30  # комиссия при выводе (30%) — столько теряется при конвертации звёзд
 
-REFERRAL_REWARD = 1.0         # сколько получает пригласивший
-REFERRAL_REQUIRED_CLAIMS = 2  # сколько заданий должен выполнить приглашённый, чтобы пригласивший получил награду
+REFERRAL_REWARD = 3.0         # сколько получает пригласивший
+REFERRAL_REQUIRED_CLAIMS = 5  # сколько заданий должен выполнить приглашённый, чтобы пригласивший получил награду
 
 BOT_DISPLAY_NAME = "StarVault"
 DIVIDER = "┄┄┄┄┄┄┄┄┄┄┄┄┄┄"
