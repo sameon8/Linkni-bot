@@ -410,7 +410,8 @@ async def main():
     await bot.set_my_commands([
         BotCommand(command="start", description="🏠 Главное меню"),
     ])
-   await bot.delete_webhook(drop_pending_updates=True) await dp.start_polling(bot)
+    await bot.delete_webhook(drop_pending_updates=True)
+    await dp.start_polling(bot)
 
 
 if __name__ == "__main__":
